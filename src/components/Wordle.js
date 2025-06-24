@@ -68,18 +68,7 @@ export default function Wordle() {
 
     })
 
-    //
-    // useEffect(() => {
-    //
-    //
-    //
-    //     // window.addEventListener('keydown', handleKeyDown)
-    //     //
-    //     // return () => window.removeEventListener('keydown', handleKeyDown);
-    // }, [currentGuess, guesses])
-
-    useKeyboard(handleKeyDown);
-
+    useKeyboard(handleKeyDown, [handleKeyDown]);
 
     useEffect(() => {
         fetchWord();
