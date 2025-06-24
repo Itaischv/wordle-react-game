@@ -68,7 +68,7 @@ export default function Wordle() {
 
     })
 
-    useKeyboard(handleKeyDown, [currentGuess, guesses]);
+    useKeyboard(handleKeyDown, [handleKeyDown]);
 
     useEffect(() => {
         fetchWord();
